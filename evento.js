@@ -1,5 +1,10 @@
-const container = document.querySelector("div");
+function saludar(event) {
+    event.stopPropagation();
+    alert('Hola!');
+}
+
+const container = document.getElementById("container");
 
 container.addEventListener("click", () => {
-    alert("Hola! soy el div");
-})
+    alert("Hola! Soy el div");
+}); 
